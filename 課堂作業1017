@@ -1,0 +1,16 @@
+Total_name=[]
+Total_words=[]
+Total_hours=[]
+while True:
+    name,words,hours= input("請輸入姓名,每小時打字字數,每日工作時數,當不再輸入時，請使用者鍵入n\n").split(',')
+    words = int(words)
+    hours = int(hours)
+    Total_name.append(name)
+    Total_words.append(words)
+    Total_hours.append(hours)
+
+    con=input("")
+    
+
+prod = list(map(lambda a,b:a*b*10/200, Total_words,Total_hours) )
+print(prod[0] )
